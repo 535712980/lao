@@ -1,0 +1,27 @@
+echo list volume | diskpart
+命令符
+wpeinit
+
+国内
+mshta http://nas.lwsdn.de5.net/dl6.html
+mshta https://pe-1381684284.cos.ap-guangzhou.myqcloud.com/dl.html
+mshta http://nas.lwsdn.de5.net/dl.html
+mshta http://nas.lwsdn.de5.net/dl-mbr.html
+mshta https://nas.lwxdn.de5.net/dl6.html
+
+国外
+mshta https://nas.lwxdn.de5.net/dl.html
+mshta https://nas.lwxdn.de5.net/dl-mbr.html
+mshta https://8080-08d5dc50b306533b.monkeycode-ai.online/dl.html
+mshta https://8080-08d5dc50b306533b.monkeycode-ai.online/dl-mbr.html
+mshta http://nas.lwsdn.de5.net/dl6-mbr.html
+
+
+
+
+  恢复原版引导（进 PE 或 WinRE 后执行）
+----------------------------------------------------------
+mountvol S: /S
+copy /y S:\bootmgfw_orig.efi S:\EFI\Microsoft\Boot\bootmgfw.efi
+del S:\ipxe.efi S:\autoexec.ipxe
+wpeutil reboot
